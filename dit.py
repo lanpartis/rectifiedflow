@@ -129,7 +129,6 @@ class DiTModel(nn.Module):
             height,
             width,
         )
-
         return reconstructed
 
     def forward(self, x, c=None):

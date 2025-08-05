@@ -2,7 +2,7 @@ import torch
 from torch import nn
 
 
-class RectifiedFlow:
+class FlowMatching:
     def __init__(self, model: nn.Module):
         self.model = model
         self.device = next(model.parameters()).device
@@ -40,6 +40,6 @@ class RectifiedFlow:
 
 if __name__ == "__main__":
     sample = torch.range(1, 48).reshape(2, 4, 3, 2, 1)
-    zt, t, tar = RectifiedFlow.get_train_tuple(sample[0], sample[1], 2)
+    zt, t, tar = FlowMatching.get_train_tuple(sample[0], sample[1], 2)
     print(sample.shape)
     print(zt.shape, t.shape, tar.shape)
