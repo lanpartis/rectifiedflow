@@ -1,4 +1,4 @@
-# Rectified Flow 实现
+# Flow Matching + DiT 实现
 
 这个项目实现了Flow Matching (FM) 技术，用于图像生成任务。项目包含了DiT (Diffusion Transformer) 模型的实现，并在MNIST数据集上进行了训练和推理。
 
